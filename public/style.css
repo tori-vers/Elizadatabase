@@ -1,0 +1,212 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#chat-log-container {
+    height: 300px !important;
+    width: 400px; /* Set a fixed width for the chat log container */
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 5px 5px 10px #c0c0c0, -5px -5px 10px #ffffff; /* Shadow effect */
+    margin-bottom: 10px;
+}
+
+.log-header {
+    background-color: var(--primary-dark); /* Darker rectangle background color */
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#listening-indicator {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-top: 5px; /* Adjust the margin for better placement */
+    display: inline-block; /* Make it inline-block to appear next to the message */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eliza-visual {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+#chat-history {
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#userInput {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#sendBtn {
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#speechBtn {
+    font-size: 16px;
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#elizaResponse {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#chat-history-container {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.eliza {
+    background-color: #008CBA;
+    color: white;
+}
+
+.timestamp {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #888;
+}
+.neumorphic-container {
+    background-color: #f0f0f0; /* Neumorphic container background color */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #c0c0c0, -10px -10px 20px #ffffff;
+}
+
+.neumorphic-element {
+    background-color: #f0f0f0; /* Neumorphic element background color */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #c0c0c0, -5px -5px 10px #ffffff;
+}
+
+.neumorphic-input {
+    font-size: 18px;
+    padding: 10px;
+    border: none; /* Remove default border for the neumorphic input */
+    background-color: #f0f0f0; /* Neumorphic input background color */
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #c0c0c0, inset -5px -5px 10px #ffffff;
+}
+:root {
+    --primary-light: #4CAF50; /* Green */
+    --primary-dark: #008CBA; /* Blue */
+    --secondary-light: #ff4081; /* Pink */
+    --background-light: #f0f0f0; /* Light background */
+    --background-dark: #333; /* Dark background */
+    --text-light: #333; /* Dark text */
+    --text-dark: #fff; /* Light text */
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.neumorphic-container {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.neumorphic-element {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.neumorphic-input {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background-color: var(--background-light);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #c0c0c0, inset -5px -5px 10px #ffffff;
+    color: var(--text-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+button {
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
